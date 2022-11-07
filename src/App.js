@@ -13,22 +13,22 @@ import Greetingstyled from './components/pure/greetingStyled';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/*<header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />*/}
         {/*Componente propio Greeting.jsx*/}
         {/*<Greeting name="Miguel"></Greeting>*/}
         {/*Componente de ejemplo funcional*/}
         {/*<GreetingF name="Miguel"></GreetingF>*/}
         {/*Componente de listado de tareas*/}
-        {/*<TaskListComponent></TaskListComponent>*/}
+        <TaskListComponent></TaskListComponent>
         {/*Componente de listado de tareas*/}
         {/*<ContactListComponent></ContactListComponent>*/}
         {/**Ejemplo de uso de hooks */}
         {/*<Ejemplo1></Ejemplo1>*/}
         {/*<Ejemplo2></Ejemplo2>*/}
         {/*<MiComponenteConContexto></MiComponenteConContexto>*/}
-        <Greetingstyled name="Miguel"></Greetingstyled>
-      </header>
+        {/*<Greetingstyled name="Miguel"></Greetingstyled>*/}
+      {/*</header>*/}
     </div>
   );
 }

@@ -38,7 +38,6 @@ class Greeting extends Component {
          )
     }
 }
-
    
 
 Greeting.propTypes = {
