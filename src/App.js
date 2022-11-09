@@ -21,8 +21,6 @@ function App() {
         {/*Componente de ejemplo funcional*/}
         {/*<GreetingF name="Miguel"></GreetingF>*/}
         {/*Componente de listado de tareas*/}
-        {/*<TaskListComponent></TaskListComponent>*/}
-        {/*Componente de listado de tareas*/}
         {/*<ContactListComponent></ContactListComponent>*/}
         {/**Ejemplo de uso de hooks */}
         {/*<Ejemplo1></Ejemplo1>*/}
@@ -30,7 +28,9 @@ function App() {
         {/*<MiComponenteConContexto></MiComponenteConContexto>*/}
         {/*<Greetingstyled name="Miguel"></Greetingstyled>*/}
       {/*</header>*/}
-      <Father></Father>
+      {/*<Father></Father>*/}
+       {/*Componente de listado de tareas*/}
+       <TaskListComponent></TaskListComponent>
     </div>
   );
 }
