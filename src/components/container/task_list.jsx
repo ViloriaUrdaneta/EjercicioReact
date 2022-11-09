@@ -14,7 +14,7 @@ const TaskListComponent = () => {
 
 
     //estado del componente
-    const [tasks, setTasks] = useState(defaultTask1, defaultTask2, defaultTask3);
+    const [task, setTasks] = useState(defaultTask1, defaultTask2, defaultTask3);
     const [loading, setLoading] = useState(true);
 
     //control del ciclo de vida del componenete
@@ -24,7 +24,7 @@ const TaskListComponent = () => {
         return () => {
             console.log('TaskList component is going to unmount')
         };
-    }, [tasks]);
+    }, [task]);
 
 
     const changeCompleted = (id) => {
@@ -51,7 +51,7 @@ const TaskListComponent = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {tasks.map((task, index) => {
+                                {task.map((task, index) => {
                                     return(
                                         <TaskComponent key={index} task={task}>
                                         </TaskComponent>
