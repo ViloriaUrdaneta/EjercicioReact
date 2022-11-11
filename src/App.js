@@ -9,6 +9,7 @@ import Ejemplo2 from './hooks/ejemplo2';
 import MiComponenteConContexto from './hooks/ejemplo3';
 import Greetingstyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
+import OptionalRender from './components/pure/optionalRender';
 
 
 function App() {
@@ -28,9 +29,11 @@ function App() {
         {/*<MiComponenteConContexto></MiComponenteConContexto>*/}
         {/*<Greetingstyled name="Miguel"></Greetingstyled>*/}
       {/*</header>*/}
-      {/*<Father></Father>*/}
-       {/*Componente de listado de tareas*/}
-       <TaskListComponent></TaskListComponent>
+        {/*<Father></Father>*/}
+        {/*Componente de listado de tareas*/}
+        {/*<TaskListComponent></TaskListComponent>*/}
+        {/**Ejemplo de renderizado condicional */}
+        <OptionalRender></OptionalRender>
     </div>
   );
 }
