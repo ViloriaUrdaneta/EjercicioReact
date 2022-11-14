@@ -31,9 +31,9 @@ function App() {
       {/*</header>*/}
         {/*<Father></Father>*/}
         {/*Componente de listado de tareas*/}
-        {/*<TaskListComponent></TaskListComponent>*/}
+        <TaskListComponent></TaskListComponent>
         {/**Ejemplo de renderizado condicional */}
-        <OptionalRender></OptionalRender>
+        {/*<OptionalRender></OptionalRender>*/}
     </div>
   );
 }
