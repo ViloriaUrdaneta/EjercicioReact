@@ -10,6 +10,7 @@ import MiComponenteConContexto from './hooks/ejemplo3';
 import Greetingstyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import OptionalRender from './components/pure/optionalRender';
+import LoginFormik from './components/pure/forms/loginFormik';
 
 
 function App() {
@@ -30,10 +31,15 @@ function App() {
         {/*<Greetingstyled name="Miguel"></Greetingstyled>*/}
       {/*</header>*/}
         {/*<Father></Father>*/}
-        {/*Componente de listado de tareas*/}
-        <TaskListComponent></TaskListComponent>
+        
         {/**Ejemplo de renderizado condicional */}
         {/*<OptionalRender></OptionalRender>*/}
+
+        {/**Ejemplo de uso de Formik y yup */}
+        <LoginFormik></LoginFormik>
+
+        {/*Componente de listado de tareas - PROYECTO FINAL*/}
+        {/*<TaskListComponent></TaskListComponent>*/}
     </div>
   );
 }
