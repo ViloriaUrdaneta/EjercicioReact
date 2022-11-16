@@ -49,7 +49,7 @@ const LoginFormik = () => {
                     isSubmitting,
                     handleChange,
                     handleBlur }) => (
-                        <form>
+                        <Form>
                             <label htmlFor="email">Email</label>
                             <Field id="email" type="email" name="email" placeholder="example@email.com" />
 
@@ -71,9 +71,10 @@ const LoginFormik = () => {
                                     <ErrorMessage name="password" component='div'></ErrorMessage>
                                 )
                             }
+
                             <button type="submit">Login</button>
                             {isSubmitting ? <p>Login your credentials...</p> : null}
-                        </form>
+                        </Form>
                 )}
                 
             </Formik>

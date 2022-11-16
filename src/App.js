@@ -11,6 +11,7 @@ import Greetingstyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import OptionalRender from './components/pure/optionalRender';
 import LoginFormik from './components/pure/forms/loginFormik';
+import RegisterFormik from './components/pure/forms/registerFormik';
 
 
 function App() {
@@ -36,7 +37,10 @@ function App() {
         {/*<OptionalRender></OptionalRender>*/}
 
         {/**Ejemplo de uso de Formik y yup */}
-        <LoginFormik></LoginFormik>
+        {/*<LoginFormik></LoginFormik>*/}
+
+        <RegisterFormik></RegisterFormik>
+        
 
         {/*Componente de listado de tareas - PROYECTO FINAL*/}
         {/*<TaskListComponent></TaskListComponent>*/}
