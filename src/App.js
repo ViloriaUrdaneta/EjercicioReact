@@ -12,6 +12,8 @@ import Father from './components/container/father';
 import OptionalRender from './components/pure/optionalRender';
 import LoginFormik from './components/pure/forms/loginFormik';
 import RegisterFormik from './components/pure/forms/registerFormik';
+import AsyncExample from './components/pure/AsyncExample';
+import ObservableExample from './components/pure/ObservableExample';
 
 
 function App() {
@@ -38,8 +40,11 @@ function App() {
 
         {/**Ejemplo de uso de Formik y yup */}
         {/*<LoginFormik></LoginFormik>*/}
+        {/*<RegisterFormik></RegisterFormik>*/}
 
-        <RegisterFormik></RegisterFormik>
+        {/**Ejemplos de procesos asincronos */}
+        {/*<AsyncExample></AsyncExample>*/}
+        <ObservableExample></ObservableExample>
         
 
         {/*Componente de listado de tareas - PROYECTO FINAL*/}

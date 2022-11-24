@@ -11,8 +11,8 @@ import AppRoutingOne from './AppRoutingOne';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppRoutingOne />
-    {/*<App />*/}
+    {/*<AppRoutingOne />*/}
+    <App />
   </React.StrictMode>
 );
 
