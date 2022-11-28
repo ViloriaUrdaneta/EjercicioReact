@@ -1,5 +1,6 @@
+import { Button } from 'bootstrap';
 import React, { useState, useEffect } from 'react';
-import { getAllPagedUsers, getAllUsers, getUserDetails } from '../../services/fetchService';
+import { getAllPagedUsers, getAllUsers, getUserDetails, login } from '../../services/fetchService';
 
 const FetchExample = () => {
 
@@ -64,9 +65,25 @@ const FetchExample = () => {
                 console.table(selectedUser)
             });
     }
+
+    const authUser = () => {
+        login('eve.holt@reqres.in', 'cityslicka')
+            .then((response) => {
+                console.log('TOKEN', response.token);
+                sessionStorage.setItem('token', response.token )
+            })
+            .catch((error) => {
+                alert(`Error whil login user: ${error}`)
+            })
+            .finally(() => {
+                console.log('Ended obtaining login user');
+            });
+    }
     
     return (
         <div>
+            {/**Login */}
+            <button onClick={authUser}>Auth User</button>
             <h2>
                 Users:
             </h2>

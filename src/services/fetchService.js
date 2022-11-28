@@ -33,3 +33,26 @@ export const getUserDetails = async (id) => {
     //return the json
     return response.json()
 }
+
+export const login = async (email, password) => {
+
+    let body = {
+        email: email,
+        password: password
+    }
+
+    let response = await fetch('https://reqres.in/api/login', {
+        method: 'POST',
+        //mode: 'no-cors',
+        //credentials:"omit",
+        //cache: 'no-cache',
+        //headers: {
+        //    'Content-type': 'application/json'
+        //},
+        body: JSON.stringify(body),
+    });
+    console.log('Response: ', response);
+    console.log('Status', response.status)
+    console.log('Ok?', response.ok)
+    return response.json();
+}
