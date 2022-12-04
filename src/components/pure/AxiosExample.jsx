@@ -6,17 +6,17 @@ const AxiosExample = () => {
 
     const [user, setUser] = useState(null);
 
-    /*
+    
     useEffect(() => {
         obtainUser();
     }, []);
-    */
+    
 
     const obtainUser = () => {
         getRandomUser()
             .then((response) => {
                 if(response.status === 200){
-                    setUser(response.data.results)
+                    setUser(response.data.results[0])
                 }
                 console.log(response);
             })
@@ -36,14 +36,13 @@ const AxiosExample = () => {
                         <h3>{user.email}</h3>
                     </div>
                 )
-                : 
-                (
-                    <div>
-                        <p> Generate a new user </p>
-                        <button onClick={obtainUser}>Generate</button>
-                    </div>
-                )
-            }
+            : null}
+                <div>
+                    <p> Generate a new user </p>
+                    <button onClick={obtainUser}>Generate</button>
+                </div>
+                
+            
         </div>
     );
 }
